@@ -1,0 +1,56 @@
+.icon-circle
+  display block
+  text-align center
+  margin-top -27px
+  margin-bottom 25px
+  z-index: 30;
+  position: relative;
+  span
+    width 87px
+    height 87px
+    border-radius 50%
+    background $yellow
+    display flex
+    justify-content center
+    align-items center
+    position relative
+    margin 0 auto 44px
+    &:before
+      pseudo(block, absolute)
+      width calc(100% + 26px)
+      height calc(100% + 26px)
+      background $yellow
+      opacity .3
+      z-index -1
+      border-radius 50%
+      top -13px
+      right -13px
+      bottom -13px
+      left -13px
+      transition .6s all ease-out 0s
+    &:after
+      pseudo(block, absolute)
+      width calc(100% + 52px)
+      height calc(100% + 52px)
+      background $yellow
+      opacity .1
+      z-index -1
+      border-radius 50%
+      top -26px
+      right -26px
+      bottom -26px
+      left -26px
+      transition .36s all ease-out 0s
+      display none
+  &:hover
+    span
+      &:before
+        opacity 0
+      &:after
+        opacity 0
+
+.fa-play
+  +mobile()
+    opacity 1 !important
+
+

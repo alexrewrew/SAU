@@ -1,0 +1,42 @@
+.partners
+  padding-top 60px
+  padding-bottom 131px
+  +portrait()
+    padding-bottom 100px
+  +mobile()
+    padding-bottom 100px
+
+.partners-list
+  margin 0
+  padding 0
+  display flex
+  flex-direction row
+  justify-content space-between
+  +portrait()
+    flex-wrap wrap
+  +mobile()
+    flex-wrap wrap
+    flex-direction column
+  li
+    list-style none
+    +portrait()
+      flex 1 1 50%
+      max-width 50%
+      margin-bottom 20px
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      margin-bottom 30px
+      text-align center
+
+.become-partner
+  background url('../img/partners/partners.png') no-repeat center center
+  background-size cover
+  padding-top 120px
+  padding-bottom 100px
+  p
+    font-size: 1.125em
+    line-height: 1.11;
+    margin-bottom 55px
+  .button
+    margin 0 0 20px 0

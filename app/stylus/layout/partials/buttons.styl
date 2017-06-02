@@ -2,4 +2,26 @@
 @import "../../utilities/mixins"
 
 /* BUTTON */
-button {}
+button.button
+  margin 33px 0
+  cursor pointer
+  transitions()
+
+.button
+  text-align center
+  border 0
+  display block
+  width 100%
+  max-width 295px
+  margin 0 auto
+  color $text-color
+  font-weight bold
+  letter-spacing: 0.4px;
+  text-transform uppercase
+  background $yellow
+  padding 20px 0
+  border-radius: 30px;
+  margin-bottom 15px
+  &:hover
+    background $blue
+    color $white

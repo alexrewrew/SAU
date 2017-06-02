@@ -1,0 +1,79 @@
+.services
+  position relative
+  min-height 308px
+  .icon-circle
+    position relative
+    +mobile()
+      top: 35px;
+      margin-bottom: 70px;
+    &:after
+      bottom -63px
+      left calc(50% - 20px)
+      position absolute
+      display block
+      content: '';
+      position: absolute
+      border: 20px solid transparent
+      border-bottom: 20px solid $white
+      z-index 30
+      opacity 0
+  .icon-circle.active
+    &:after
+      opacity 1
+
+.services-dropdown
+  border-radius 5px
+  box-shadow: 0 6px 60px 0 rgba(0, 0, 0, 0.23)
+  position absolute
+  bottom -134px
+  left: 47px
+  right: 22px
+  z-index 20
+  overflow hidden
+  height: 253px
+  background $white
+  +mobile()
+    position relative
+    bottom 0
+    left 0
+    right 0
+    height auto
+    margin-bottom 60px
+  ul
+    margin 0 0 15px 0
+    padding 0
+    li
+      font-size 1.25em
+      margin-left: 20px
+  img
+    position absolute
+    bottom: -235px
+    right: -238px
+    +mobile()
+      display none
+  .explane
+    color #9f9f9f
+    font-size .875em
+
+.package
+  position absolute
+  top 0
+  bottom 0
+  left: 0
+  right: 0
+  opacity 0
+  background $white
+  padding 51px 82px 13px
+  z-index 1
+  +mobile()
+    position static
+    opacity 1
+    padding 15px
+
+  +portrait()
+    padding: 31px 42px 13px;
+
+.package.active
+  opacity 1
+  z-index 5
+

@@ -53,7 +53,7 @@ gulp.task('pug', function buildHTML() {
 
 //js concat
 gulp.task('scripts', function () {
-    return gulp.src(['app/libs/jquery/dist/jquery.js', 'app/js/scripts/scripts.js'])
+    return gulp.src(['app/libs/jquery/dist/jquery.js', 'app/libs/chosen/chosen.jquery.js', 'app/libs/slick-carousel/slick/slick.js', 'app/js/scripts/scripts.js'])
         .pipe(concat('main.js'))
         .pipe(gulp.dest('app/js'));
 });

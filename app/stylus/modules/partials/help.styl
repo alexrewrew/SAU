@@ -1,0 +1,123 @@
+.help
+  background $yellow
+  padding-top 67px
+  padding-bottom 21px
+  .help-list
+    font-size 1.125em
+    letter-spacing: 1.8px;
+    text-transform uppercase
+    padding 0
+    margin 0 0 58px
+    #help-4
+      margin-top -20px
+    li
+      list-style none
+      margin-top -12px
+      transitions()
+      &:first-child
+        margin-top 0
+      a
+        color $text-color
+        &:hover
+          color $white
+          .number
+            border 1px solid transparent
+            color $white
+            &:after, &:before
+              top 0
+              left 0
+              right 0
+              bottom 0
+      .number
+        display inline-flex
+        margin-right 37px
+        border 1px solid rgba(255,255,255,.8)
+        border-radius 50%
+        align-items center
+        justify-content center
+        font-weight 900
+        position relative
+        z-index 20
+        transitions()
+        &:after, &:before
+          pseudo(block, absolute)
+          border 1px solid $white
+          border-radius 50%
+          transitions()
+        &:after
+          top -10px
+          left -10px
+          right -10px
+          bottom -10px
+          opacity .3
+        &:before
+          top -20px
+          left -20px
+          right -20px
+          bottom -20px
+          opacity .1
+      .n-35
+        width 58px
+        height 58px
+        font-size: 1.875em
+        color: $blue;
+        left 5px
+      .n-26
+        width 47px
+        height 47px
+        font-size: 1.5em
+        color: $green;
+        margin-right calc(95px - 47px)
+        left 10px
+      .n-31
+        width 53px
+        height 53px
+        font-size: 1.813em
+        color: $red;
+        margin-right calc(95px - 53px)
+        left 7px
+      .n-44
+        width 67px
+        height 67px
+        font-size: 2.125em
+        color: $purple;
+        margin-right calc(95px - 67px)
+      .n-22
+        width 47px
+        height 47px
+        font-size: 1.5em
+        color: $orange;
+        margin-right calc(95px - 47px)
+        left 10px
+
+.comment-list
+  display flex
+  flex-direction row
+  margin 60px 0 0
+  padding 0
+  li
+    list-style none
+    margin-right 60px
+    .icon-circle
+      color $white
+      span
+        &:after, &:before
+          background $white
+      .fa
+        font-size 30px
+        transition all .4s ease
+        opacity 0
+        margin-left 10px
+      &:hover
+        color $yellow
+        .fa
+          transform rotate(360deg)
+          opacity 1
+    .icon-circle.icon-video-1
+      span
+        background url('../img/video/video-1.png') no-repeat center center
+        background-size cover
+    .icon-circle.icon-video-2
+      span
+        background url('../img/video/video-1.png') no-repeat center center
+        background-size cover

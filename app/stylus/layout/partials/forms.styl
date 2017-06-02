@@ -6,9 +6,28 @@ form {}
 
 /* INPUTS */
 input
+  color $blue
+  border 1px solid #e2e2df
+  border-radius 30px
+  width 100%
+  letter-spacing: 0.4px;
+  padding 20px 33px
+  margin 33px 0
+  transitions()
   +placeholder()
-    color gray
+    color $text-color
+  &:focus
+    outline none
+    border-color $blue
+  &:hover
+    border-color $blue
 
 textarea {}
 
 label {}
+
+.form-section
+  padding-top 103px
+  padding-bottom 81px
+  p
+    margin-bottom 36px

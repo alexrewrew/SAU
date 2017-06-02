@@ -1,0 +1,67 @@
+.plates
+  padding-top 21px
+  position relative
+  height 725px
+  overflow hidden
+  padding-bottom 30px
+  transitions()
+  &:after
+    pseudo(block,absolute)
+    bottom 0
+    left 0
+    right 0
+    height 135px
+    background: linear-gradient(to bottom, rgba(255,255,255,.5) 0%, rgba(255,255,255,1)80%)
+    z-index 3
+
+.plates.all
+  height 100%
+  &:after
+    display none
+
+.plate-univ
+  width 100%
+  height 251px
+  position relative
+  margin 10px 0
+  padding: 0 20px 0
+  display flex
+  align-items flex-end
+  &:after
+    pseudo(block,absolute)
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background $black
+    opacity .3
+    z-index -1
+    transitions()
+  .plate-univ-description
+    transitions()
+    p
+      font-size .875em
+      color $white
+  &:hover
+    &:after
+      opacity .5
+    .plate-univ-description
+      transform translateY(-30px)
+
+
+.plate-univ.big
+  height 280px
+
+.img-container
+  width 100%
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  overflow hidden
+  display flex
+  align-items center
+  text-align center
+  justify-content:center
+  z-index -1

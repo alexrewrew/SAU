@@ -2,4 +2,54 @@
 @import '../../utilities/mixins'
 
 /* HEADER */
-header {}
+header
+  background url('../img/jumbotron.png') no-repeat center
+  background-size cover
+.jumbo
+  padding 146px 0 89px
+  h2
+    color $white
+
+header.header-slider
+  background none
+  max-height 639px
+  overflow hidden
+  position relative
+  +mobile()
+    max-height unset
+
+  h1
+    font-size: 2.125em
+    font-weight: 900;
+    color: $white;
+    line-height 1.2
+    margin-bottom 26px
+    +mobile()
+      font-size 1.125em
+      letter-spacing 1px
+      margin-bottom 16px
+    +portrait()
+      letter-spacing -.1px
+  h2
+    font-size 1.25em
+    color $white
+    text-transform none
+    font-weight 400
+    +mobile()
+      font-size 1em
+
+.univ-description
+  position absolute
+  top 32%
+  left 17%
+  max-width 507px
+  z-index 10
+  +mobile()
+    top 15px
+    left 30px
+    right 30px
+  +portrait()
+    top 20%
+
+
+

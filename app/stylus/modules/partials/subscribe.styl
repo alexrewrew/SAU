@@ -1,0 +1,44 @@
+.subscribe
+  background $blue
+  padding-top 190px
+  padding-bottom 67px
+  +mobile()
+    padding-top 60px
+  h2
+    margin-bottom 15px
+  p
+    margin-bottom 21px
+  .icon-circle
+    +mobile()
+      margin-top: 60px;
+    span
+      background $white
+      &:before
+        background $white
+      &:after
+        background $white
+    h5
+      color: $white
+
+.social-subscribe
+  display flex
+  flex-direction row
+  padding 0
+  margin 0
+  li
+    list-style none
+    margin-right 25px
+    a
+      color $blue
+      font-size 1.250em
+      width 35px
+      height 35px
+      text-align center
+      display flex
+      justify-content center
+      align-items center
+      background $white
+      border-radius 50%
+      &:hover
+        background transparent
+        color $white

@@ -2,6 +2,113 @@
 @import '../../utilities/mixins'
 
 /* SELECTS */
-select {}
+select
+  color $blue
+  border 1px solid #e2e2df
+  border-radius 30px
+  width 100%
+  letter-spacing: 0.4px;
+  padding 17px 33px
+  margin 33px 0
+  -webkit-appearance: none;
+  background $white
+  transitions()
+  +placeholder()
+    color $gray
+  &:focus
+    outline none
+    border-color $blue
+  &:hover
+    border 1px solid $blue
+    color $blue
+
+.selectic
+  position relative
+  &:after
+    top 48%
+    right 10%
+    position absolute
+    display block
+    content: '';
+    position: absolute
+    border: 5px solid transparent
+    border-top: 5px solid #e2e2df
+    z-index 20
+    transitions()
+  &:hover
+    &:after
+      border-top: 5px solid $blue
+
 option {}
 optgroup {}
+
+.chosen-container
+  color $blue
+  border 1px solid #e2e2df
+  border-radius 30px
+  width 100%
+  letter-spacing: 0.4px;
+  //padding 20px 33px
+  margin 33px 0
+  &:hover, &:focus
+    border-color $blue
+
+.chosen-container-single .chosen-single
+  border none
+  background transparent
+  font-size 1em
+  box-shadow none
+
+.chosen-container-active.chosen-with-drop .chosen-single
+  border none
+  background transparent
+  box-shadow none
+
+.chosen-container-active
+  border 1px solid $blue
+
+.chosen-container-active .chosen-drop
+  top 64%
+  border 1px solid $blue
+  border-bottom-left-radius 30px
+  border-bottom-right-radius 30px
+  border-top 0
+  width 101%
+  margin-left -1px
+
+.chosen-container .chosen-results
+  padding 0
+  font-size 16px
+  padding-top 10px
+  li
+    padding 8px 33px
+  .highlighted
+    background transparent
+
+.chosen-container .chosen-results li.active-result.highlighted
+  background transparent
+  color $blue
+.chosen-container .chosen-results li.active-result.result-selected
+  display none
+
+.chosen-container-single .chosen-single
+  padding 17px 33px
+  height auto
+
+.chosen-container-single .chosen-single div
+  top 30%
+  right 5%
+
+.chosen-container-single .chosen-single span
+  font-size 16px
+
+
+input.error, select.error
+  border-color red !important
+  color red !important
+  &:focus
+    border-color red
+    color red
+  +placeholder()
+    color red
+

@@ -1,0 +1,161 @@
+.amount
+  background $yellow
+  padding-top 60px
+  padding-bottom: 42px;
+  h5
+    font-size 1em
+    position relative
+    z-index 2
+    +mobile()
+      margin-bottom 20px
+
+.number-big
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  padding 0
+  margin 14px 0
+  +portrait()
+    flex-wrap wrap
+  +mobile()
+    flex-wrap wrap
+    flex-direction column
+    justify-content center
+    align-items center
+  li
+    list-style none
+    flex 1 1 calc(100% / 6)
+    max-width calc(100% / 6)
+    +portrait()
+      flex 1 1 calc(100% / 3)
+      max-width calc(100% / 3)
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      min-width 150px
+    .numb
+      color $white
+      font-weight 900
+      font-size 2.938em
+      position relative
+      &:before
+        pseudo(block, absolute)
+        border 1px solid $white
+        opacity .1
+        border-radius 50%
+      &:after
+        pseudo(block, absolute)
+        border 1px solid $white
+        opacity .5
+        border-radius 50%
+      span
+        display inline-block
+        margin-bottom 33px
+        +mobile()
+          margin-bottom 0
+        &:after
+          pseudo(block, absolute)
+          border 1px solid $white
+          opacity 1
+          border-radius 50%
+          top -10px
+          left -10px
+          right -10px
+          bottom -10px
+    .numb-5
+      &:after
+        width 86px
+        height 86px
+        top calc(50% - 43px)
+        left calc(50% - 43px)
+      &:before
+        width 106px
+        height 106px
+        top calc(50% - 53px)
+        left calc(50% - 53px)
+      span:after
+        width 66px
+        height 66px
+        top calc(50% - 33px)
+        left calc(50% - 33px)
+    .numb-54
+      &:after
+        width 210px
+        height 210px
+        top calc(50% - 105px)
+        left calc(50% - 105px)
+      &:before
+        width 258px
+        height 258px
+        top calc(50% - 129px)
+        left calc(50% - 129px)
+      span:after
+        width 160px
+        height 160px
+        top calc(50% - 80px)
+        left calc(50% - 80px)
+    .numb-32
+      &:after
+        width 134px
+        height 134px
+        top calc(50% - 67px)
+        left calc(50% - 67px)
+      &:before
+        width 164px
+        height 164px
+        top calc(50% - 82px)
+        left calc(50% - 82px)
+      span:after
+        width 102px
+        height 102px
+        top calc(50% - 51px)
+        left calc(50% - 51px)
+    .numb-44
+      &:after
+        width 174px
+        height 174px
+        top calc(50% - 87px)
+        left calc(50% - 87px)
+      &:before
+        width 204px
+        height 204px
+        top calc(50% - 107px)
+        left calc(50% - 107px)
+      span:after
+        width 132px
+        height 132px
+        top calc(50% - 66px)
+        left calc(50% - 66px)
+    .numb-50
+      &:after
+        width 186px
+        height 186px
+        top calc(50% - 93px)
+        left calc(50% - 93px)
+      &:before
+        width 230px
+        height 230px
+        top calc(50% - 115px)
+        left calc(50% - 115px)
+      span:after
+        width 142px
+        height 142px
+        top calc(50% - 71px)
+        left calc(50% - 71px)
+    .numb-200
+      &:after
+        width 394px
+        height 394px
+        top calc(50% - 197px)
+        left calc(50% - 197px)
+      &:before
+        width 484px
+        height 484px
+        top calc(50% - 242px)
+        left calc(50% - 242px)
+      span:after
+        width 300px
+        height 300px
+        top calc(50% - 150px)
+        left calc(50% - 150px)
+

@@ -4,9 +4,40 @@
 /* LINKS */
 a
   text-decoration none
-  transition()
+  transitions()
   &:hover
     text-decoration none
-
   &:focus
     text-decoration none
+
+.link-regular
+  color $blue
+  letter-spacing: 1.9px;
+  font-weight 700
+  font-size 1.125em
+  text-transform uppercase
+  position relative
+  display inline-block
+  padding-right 30px
+  .fa
+    margin-left 18px
+    position absolute
+    font-size 30px
+    right 0
+    top -5px
+    transitions()
+  &:hover
+    .fa
+      transform translateX(20px)
+
+.link-text
+  font-size 1em
+  letter-spacing: 0.4px;
+  color $blue
+  line-height: 2.91;
+  font-weight 700
+  display inline-block
+  text-transform uppercase
+  position relative
+  &:hover
+    color $text-color

@@ -1,0 +1,21 @@
+.map-list
+  margin 0
+  padding 0
+  +mobile()
+    display none
+  +portrait()
+    display none
+  +tablet()
+    position relative
+    left -100px
+  li
+    list-style none
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    opacity 0
+    transitions()
+  li.active
+    opacity 1

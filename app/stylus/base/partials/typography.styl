@@ -3,13 +3,63 @@
 
 /* HEADERS */
 
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
+h1
+  color $blue
+  text-transform uppercase
+  font-size 7.313em
+  font-weight 900
+  letter-spacing: -2px;
+  margin-bottom 15px
+  line-height .9
+  +mobile()
+    font-size 4em
+
+h2
+  font-size: 2.125em
+  font-weight: 900;
+  color: $text-color
+  text-transform uppercase
+  letter-spacing: 0
+  margin-bottom 32px
+  letter-spacing: -.3px;
+  +mobile()
+    font-size 2em
+
+h2.white
+  color $white
+
+
+h3
+  font-size: 1.875em
+  line-height: 1.03;
+  color: #010101;
+  text-transform uppercase
+  font-weight 900
+
+h4
+  font-size: 1em
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform uppercase
+  color $white
+
+h5
+  font-size: 1.125em
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: $text-color;
 h6 {}
 
 /* PARAGRAPH */
 p
-  font(1em, $black, 400, normal)
+  font(1em, $text-color, 400, normal)
+  margin-bottom 25px
+
+p.white
+  color $white
+
+.two-cols
+  columns 2
+  font-size 1.125em
+  +mobile()
+    columns 1

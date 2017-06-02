@@ -19,7 +19,7 @@ pseudo($display, $position)
 
 //transition
 transitions()
-  transition: all 0.4s ease
+  transition: all 0.2s ease
 
 //triangles in css
 triangle($colour, $direction, $size)
@@ -27,20 +27,16 @@ triangle($colour, $direction, $size)
   width: 0
   height: 0
   if $direction == down
-    border-left: $size solid transparent
-    border-right: $size solid transparent
+    border: $size solid transparent
     border-top: $size solid $colour
   else if $direction == up
-    border-left: $size solid transparent
-    border-right: $size solid transparent
+    border: $size solid transparent
     border-bottom: $size solid $colour
   else if $direction == right
-    border-top: $size solid transparent
-    border-bottom: $size solid transparent
+    border: $size solid transparent
     border-left: $size solid $colour
   else if $direction == left
-    border-top: $size solid transparent
-    border-bottom: $size solid transparent
+    border: $size solid transparent
     border-right: $size solid $colour
 
 //placeholder styles
