@@ -90,7 +90,16 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         nextArrow: '<i class="fa fa-angle-right"></i>',
-        prevArrow: '<i class="fa fa-angle-left"></i>'
+        prevArrow: '<i class="fa fa-angle-left"></i>',
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
     })
 
     $('.slider-head').slick({
@@ -103,6 +112,10 @@ $(document).ready(function () {
         event.preventDefault();
         $('.univ-about-container').toggleClass('open');
     });
+    $('#open-text2').click(function () {
+        event.preventDefault();
+        $('.courses-about-container').toggleClass('open');
+    });
 
     $(".smooth").click(function (event) {
         event.preventDefault();
@@ -114,9 +127,22 @@ $(document).ready(function () {
     });
     // $(".chosen-select").chosen({disable_search_threshold: 10});
 
-    //responsive scripts
-    if (window.matchMedia('(max-width: 767px)').matches) {
 
+
+
+    //responsive scripts
+    if (window.matchMedia('(min-width: 992px)').matches) {
+        $(function(){
+            var topPos = $('.affix-panel form').offset().top;
+            $(window).scroll(function() {
+                var top = $(document).scrollTop(),
+                    pip = $('.univ-about').offset().top,
+                    height = $('.affix-panel form').outerHeight();
+                if (top > topPos && top < pip - height) {$('.affix-panel form').addClass('fixed').removeAttr("style");}
+                else if (top > pip - height) {$('.affix-panel form').removeClass('fixed').css({'position':'absolute','bottom':'0'});}
+                else {$('.affix-panel form').removeClass('fixed');}
+            });
+        });
     }
 })
 

@@ -5,6 +5,11 @@
 .degree
   padding-top 101px
 
+.fixed
+  position fixed
+  top: 10px;
+  z-index: 9999;
+
 .affix-panel
   position absolute
   background $yellow
@@ -95,7 +100,7 @@
   font-weight 700
 
 .categories
-  margin 55px 0 99px
+  margin 55px 0 0
   padding 0
   li
     list-style none
@@ -118,6 +123,7 @@
   background-size cover
   padding-top 118px
   padding-bottom 120px
+  margin-top: 110px;
   h2
     margin-bottom 40px
   .button
@@ -172,6 +178,25 @@
     right 0
 
 .univ-about-container.open
+  height auto
+  &:after
+    opacity 0
+    z-index -10
+
+.courses-about-container
+  height 600px
+  overflow hidden
+  margin-bottom 30px
+  transitions()
+  &:after
+    pseudo(block,absolute)
+    width 100%
+    height 150px
+    background: linear-gradient(to bottom, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 66%, rgba(249,249,249,1) 100%);
+    bottom 20px
+    left 0
+    right 0
+.courses-about-container.open
   height auto
   &:after
     opacity 0

@@ -1,0 +1,72 @@
+.remodal
+  padding 0
+  width 713px
+  height 401px
+  +mobile()
+    width 100%
+    height auto
+  iframe
+    max-width 713px
+    max-height 401px
+
+.remodal-close
+  left auto
+  right -35px
+  &:focus
+    outline none
+
+.modal-thanks
+  border-radius 30px
+  width: 571px;
+  height: 524px
+  +mobile()
+    width 100%
+    height auto
+  .remodal-close
+    right 27px
+    top 27px
+    +mobile()
+      right 20px
+      top 15px
+    &:before
+      font-size 50px
+
+.modal-white
+  background $white
+  border-top-left-radius 30px
+  border-top-right-radius 30px
+  height 218px
+  padding 67px 71px 68px 66px
+  +mobile()
+    padding 50px 15px 15px
+  h2
+    margin-bottom 42px
+    +mobile()
+      margin-bottom 15px
+
+.modal-yellow
+  background $yellow
+  border-bottom-left-radius 30px
+  border-bottom-right-radius 30px
+  height 310
+  padding 70px 71px 70px 66px
+  +mobile()
+    padding 30px 15px 30px
+  h3
+    font-size 1em
+    text-align left
+    line-height: 1.43
+    font-weight 700
+    margin-bottom 42px
+    +mobile()
+      margin-bottom 15px
+  p
+    text-align left
+  .social-subscribe
+    li
+      a
+        background $blue
+        color $white
+        &:hover
+          background $white
+          color $blue

@@ -112,14 +112,15 @@
             border: 1px solid $black
       ul
         width: 630px;
-        height: 279px;
-        top -300px
+        height: 269px;
+        top -320px
         left -50px
+        +mobile()
+          display none !important
         &:after
           bottom: -40px;
-          left: calc(50% - 20px);
+          left: 65px;
           pseudo(block,absolute)
-          position: absolute;
           border: 20px solid transparent;
           border-top: 20px solid $white;
           z-index: 60;
@@ -128,6 +129,25 @@
           list-style none
           width 100%
           height 100%
-          .persona-description
-            padding 51px 74px 74px 129px
+          .person-description
+            padding 30px 74px 54px 129px
+            position relative
+
+            h3
+              font-size 1em
+              line-height: 2.91;
+              letter-spacing: 0.4px;
+              font-weight 700
+            p
+              line-height 1.57
+              font-size .875em
+            &:after
+              display block
+              position absolute
+              content '"'
+              color $yellow
+              font-size 7em
+              top 30px
+              left 50px
+
 

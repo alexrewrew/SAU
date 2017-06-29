@@ -191,13 +191,14 @@ block content
                     h2.white Отзывы о нашей работе
                     ul.comment-list
                         li
-                            a(href='' title='' class='icon-circle icon-video-1')
+                            a(data-remodal-target="modal1" title='' class='icon-circle icon-video-1 link-to-video')
                                 span
                                     i.fa.fa-play
                         li
-                            a(href='' title='' class='icon-circle icon-video-2')
+                            a(data-remodal-target="modal2" title='' class='icon-circle icon-video-2 link-to-video')
                                 span
                                     i.fa.fa-play
+
                 .col-lg-7.col-xl-8
                     ul.map-list
                         li.map#map-1
@@ -393,15 +394,15 @@ block content
                     .spacer-video
                     ul.video-container
                         li
-                            a(href='' title='' class='icon-circle')
+                            a(data-remodal-target="modal3"  title='' class='icon-circle link-to-video')
                                 span
                                     i.fa.fa-play
                         li
-                            a(href='' title='' class='icon-circle')
+                            a(data-remodal-target="modal4"  title='' class='icon-circle link-to-video')
                                 span
                                     i.fa.fa-play
                         li
-                            a(href='' title='' class='icon-circle')
+                            a(data-remodal-target="modal5"  title='' class='icon-circle link-to-video')
                                 span
                                     i.fa.fa-play
     section.amount
@@ -477,3 +478,19 @@ block content
                     h2 Стань нашим партнером
                     p Мы предлагаем партнерство на взаимовыгодных условиях компаниям и предпринимателям со всего мира. Если Вы занимаетесь организацией образовательных программ и рассматриваете Украину в качестве бизнес-направления, напишите нам - мы подготовили для Вас специальное предложение.
                     a(href='' class='button' title='') стать партнером
+
+    .remodal(data-remodal-id='modal1')
+        button.remodal-close(data-remodal-action='close')
+        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/1Ov8sv1SIJc" frameborder="0" allowfullscreen)
+    .remodal(data-remodal-id='modal2')
+        button.remodal-close(data-remodal-action='close')
+        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/1Ov8sv1SIJc" frameborder="0" allowfullscreen)
+    .remodal(data-remodal-id='modal3')
+        button.remodal-close(data-remodal-action='close')
+        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/1Ov8sv1SIJc" frameborder="0" allowfullscreen)
+    .remodal(data-remodal-id='modal4')
+        button.remodal-close(data-remodal-action='close')
+        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/1Ov8sv1SIJc" frameborder="0" allowfullscreen)
+    .remodal(data-remodal-id='modal5')
+        button.remodal-close(data-remodal-action='close')
+        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/1Ov8sv1SIJc" frameborder="0" allowfullscreen)
